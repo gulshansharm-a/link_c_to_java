@@ -18,7 +18,8 @@ public class ScannForFunctionsInC {
         // scannForFunctionsInC.get_values_for_method("      public static   int        myMethod (int a , int c){");
         ScannForFunctionsInC scannForFunctionsInC2 = new ScannForFunctionsInC();
         scannForFunctionsInC2. get_values_for_method("      public static   int        myMethod (int a , int c){");  
-        
+        scannForFunctionsInC2. get_values_for_method("      public static   int    myMethod (int a , int b){");  
+
         GenerateDll gd = new GenerateDll();
         gd.generateCppHeader(methodNameList, dataTypeOfCMethodList, "C" + "MainInC", "MainInC", finalparametersList,
                 finalparameters_varsList, typeCastingList);
